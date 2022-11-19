@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Z Sensor</title>
+    </head>
+    <body style="height: 697px"><!-- setting the height of the container as 697pixel-->
+        <div style="background-color: #f1f1f1; height:100%;"><!-- setting background color to #f1f1f1 -->
+        	<div class="needle_container"></div><!-- moving button container-->
+        	<div class="top_marking"></div><!-- max unit marking line -->
+        	<div class="mid_marking"></div><!--middle unit marking line -->
+        	<div class="bottom_marking"></div><!--bottom unit marking -->
+        	<div class="top_unit">+25</div><!--upper unit value -->
+        	<div class="mid_unit">0</div><!--middle unit vale -->
+        	<div class="bottom_unit">-25</div><!--lower unit value -->
+        	<div class="needle" id ="needle">00.00</div> <!--green moving icon -->
+        	<div id="vibration_message"> Tap to start vibration feedback </div><!-- Requesting user to tap on screen since vibration does not work without user interaction -->
+        	<div class="app_name">Z Sensor</div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
